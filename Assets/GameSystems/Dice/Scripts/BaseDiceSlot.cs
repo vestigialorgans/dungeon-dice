@@ -68,7 +68,8 @@ namespace GameSystems.Dice
             if (eventData.pointerDrag != null)
             {
                 RectTransform targetTransform = eventData.pointerDrag.GetComponent<RectTransform>();
-                targetTransform.anchoredPosition = GetComponent<RectTransform>().anchoredPosition;
+                eventData.pointerDrag.transform.parent = transform;
+                targetTransform.anchoredPosition = Vector3.zero;
             }
         }
     }
