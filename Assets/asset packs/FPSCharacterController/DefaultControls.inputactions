@@ -2,7 +2,7 @@
     "name": "DefaultControls",
     "maps": [
         {
-            "name": "Default",
+            "name": "Movement",
             "id": "d7eb83a5-cc4b-4dec-a5cb-d4193c86bcbd",
             "actions": [
                 {
@@ -181,6 +181,76 @@
                     "processors": "",
                     "groups": "Gamepad",
                     "action": "ToggleSprint",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        },
+        {
+            "name": "Actions",
+            "id": "53572973-cd27-4730-b3b6-cca2684f0f02",
+            "actions": [
+                {
+                    "name": "Inventory",
+                    "type": "Button",
+                    "id": "f2488c00-a9e3-43f4-bdb8-ccd617751e7d",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "Attack",
+                    "type": "Button",
+                    "id": "f81519cd-5513-4584-924a-c17d053e8371",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "5b4c6263-99d8-4305-a452-181a3a6b3166",
+                    "path": "<Keyboard>/tab",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Keyboard and Mouse",
+                    "action": "Inventory",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "7fe3c2ff-dcf8-4219-ad65-971089d22532",
+                    "path": "<Gamepad>/buttonNorth",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Inventory",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "08dde78b-a22f-49af-8f57-efa76a95ed89",
+                    "path": "<Mouse>/leftButton",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Attack",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "c844ada9-57f2-4e4b-ac8b-fe075cdb2927",
+                    "path": "<Gamepad>/rightShoulder",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Attack",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }
