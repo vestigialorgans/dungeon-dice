@@ -7,6 +7,8 @@ namespace GameSystems.Dice
     {
         public DiceProperties type;
         
+        public BaseDiceSlot PreviousSlot { get; set; }
+        
         public void OnDrag(PointerEventData eventData)
         {
             eventData.pointerDrag.GetComponent<RectTransform>().anchoredPosition += eventData.delta;
